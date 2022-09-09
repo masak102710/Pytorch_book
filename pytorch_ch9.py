@@ -7,8 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1BecPzsM1CcLKlJTuNVU-ZAv5-kveS5sY
 """
 
-!pip install japanize_matplotlib
-!pip install torchviz
+#!pip install japanize_matplotlib
+#!pip install torchviz
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
