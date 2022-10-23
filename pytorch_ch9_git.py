@@ -126,8 +126,8 @@ def show_image_labels(loader,net,device,classes):
 
   #image表示
   plt.figure(figsize=(10,5))
-  for i in range(50):
-    ax = plt.subplot(5,10,i+1)
+  for i in range(20):
+    ax = plt.subplot(2,10,i+1)
     plt_image = images[i].numpy() #numpyに変換
     plt_image2 = np.transpose(plt_image,(1,2,0)) #行列の読込方
     plt_image3 = (plt_image2+1)/2 #正規化を戻す
