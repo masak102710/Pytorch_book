@@ -108,7 +108,7 @@ def fit(net,optimizer,criterion,num_epochs,train_loader,test_loader,device,histo
 
   return history
 
-def show_image_labels(loader,net,device,classes):
+def show_image_labels(loader,net,device,classes,i):
 
   #loaderからデータ読込
   for images,labels in loader:
@@ -126,7 +126,7 @@ def show_image_labels(loader,net,device,classes):
 
   #image表示
   plt.figure(figsize=(10,5))
-  for i in range(20):
+  for i in range(i):
     ax = plt.subplot(2,10,i+1)
     plt_image = images[i].numpy() #numpyに変換
     plt_image2 = np.transpose(plt_image,(1,2,0)) #行列の読込方
